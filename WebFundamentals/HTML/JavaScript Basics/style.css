@@ -18,6 +18,7 @@
         margin-top: 5px;
     }
     #maincontent{
+        width: 900px;
         border-radius: 20px;
         background-color: black;
         color: white;
