@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+.wrapper{
+    height: 1000px;
+    width: 950px;
+    background-color: rgb(88, 53, 76);
+}
+.main_header{
+    height: 20px;
+    width: 920px;
+    padding: 15px;
+    background-color: rgb(241, 241, 241);
+}
+.main_header h2{
+    display: inline-block;
+}
+.main_header h3{
+    display: inline-block;
+}
+.main img{
+    height: 250px;
+    width: 400px;
+    display: inline-block;
+    margin: 25px 10px 10px 25px;
+    border: 5px solid lightgray;     
+}
+.about_box{
+    width: 450px;
+    background-color: white;
+    margin: 25px 10px 10px 20px;
+    border: 5px black;
+    display: inline-block;
+    vertical-align: top;
+}
+.about_box h2{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+.about_paragraph_one{
+    padding: 10px;
+}
+.about_paragraph_two{
+    padding: 5px 10px 10px 10px;
+}
+.about_paragraph_three{
+    padding: 0px 10px 15px 10px;
+}
+.main_projects{
+    display: inline-block;
+}
+.main_projects img{
+    height: 150px;
+    width: 300px;
+}
+.lamode_box{
+    width: 300px;
+    background-color: white;
+    margin: 15px 10px 10px 25px;
+    border: 5px black;
+    display: inline-block;
+    vertical-align: top;
+}
+.lamode_box h2{
+    background-color: gray;
+    color: white;
+    padding: 10px; 
+}
+.lamode_box p{
+    padding: 10px 10px 40px 10px;
+    text-align: justify;
+}
+.lamode_box h3{
+    background-color: gray;
+    color: white;
+    padding: 10px; 
+}
+.family_contacts_box{
+    width: 300px;
+    background-color: white;
+    margin: 15px 10px 10px 10px;
+    border: 5px black;
+    display: inline-block;
+}
+.family_contacts_box h2{
+    background-color: gray;
+    color: white;
+    padding: 10px; 
+}
+.family_contacts_box p{
+    padding: 10px 10px 40px 10px;
+    text-align: justify;
+}
+.family_contacts_box h3{
+    background-color: gray;
+    color: white;
+    padding: 10px; 
+}
+.fiveEleven_box{
+    width: 300px;
+    background-color: white;
+    margin: 15px 10px 10px 10px;
+    border: 5px black;
+    display: inline-block;
+}
+.fiveEleven_box h2{
+    background-color: gray;
+    color: white;
+    padding: 10px;  
+}
+.fiveEleven_box p{
+    padding: 10px 10px 40px 10px;
+    text-align: justify;
+}
+.fiveEleven_box h3{
+    background-color: gray;
+    color: white;
+    padding: 10px; 
+}
