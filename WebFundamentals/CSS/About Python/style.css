@@ -56,19 +56,22 @@ header{
         background-color: #417bad;
         margin-left: 70px;
         margin-right: 70px;
-        border-radius: 10px;
+        border-radius: 8px;
+        padding-right: 20px;
     }
-        .nav_items{
+        .nav ul{
             height: 40px;
-        }
-        .nav_items ul{
             display: inline-block;
         }
-        .nav_items li{
-            display: inline-block;
-            padding: 0px 20px;
-            font-size: 16pt;
-        }
+            .nav li{
+                display: inline-block;
+                padding: 0px 20px;
+            }
+                .nav li a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 16pt;
+                }
     .resources{
         display: inline-block;
         font-size: 14pt;
@@ -115,7 +118,7 @@ header{
             padding: 7px;
             font-size: 14pt;
         }
-    .other{
+    footer{
         display: inline-block;
         width: 890px;
         padding: 0px 40px;
@@ -124,17 +127,20 @@ header{
         background: -moz-linear-gradient(#245076, #2c6494, #3374ac); /* For Firefox 3.6 to 15 */
         background: linear-gradient(#245076,#2c6494, #3374ac); /* Standard syntax */
     }
-        .other_links ul{
+        footer ul{
             margin-left: 60px;
             margin-top: 55px;
         }
-        .other_links li{
+        footer ul li{
             display: inline-block;
             font-size: 14pt;
             margin: 0px 20px;
-            color: #6fa2d0;
         }
-        .other p{
+            footer a{
+                text-decoration: none;
+                color:#6fa2d0;
+            }
+        footer p{
             margin-left: 400px;
             font-size: 8pt;
             color: #6fa2d0;
@@ -155,14 +161,15 @@ header{
             color: black;
             margin: 15px 50px 5px 90px;
             font-style: normal;
+            border-top: 4px solid #73a7d5;
+            text-align: center;
+            padding: 0px;
         }
         .getting_started p{
             width: 330px;
             text-align: center;
             color: black;
             margin-bottom: 0px;
-
-
         }
         .getting_started_list{
             text-align: center;
@@ -179,10 +186,10 @@ header{
                 text-decoration: none;
                 color: #a0c3e2
             }
-            #pypi{
+            .getting_started span{
                 text-decoration: none;
                 color:#a0c3e2;
-                font-size: 10pt;
+                font-size: 8pt;
             }
             #applications{
                 margin-right: 0px;
