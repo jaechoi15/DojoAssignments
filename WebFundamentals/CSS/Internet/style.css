@@ -1,5 +1,5 @@
 *{
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
     font-family: Arial;
 }
 .wrapper{
@@ -100,8 +100,9 @@
                 padding: 5px 0px;
             }
     .content{
-        width: 695px;
-        display:inline-block;
+        width: 700px;
+        display: inline-block;
+        margin-left: 50px;
     }
         .home{
             border-bottom: 1px solid #cacaca;
@@ -111,17 +112,17 @@
                 width: 20px;
                 height: 20px;
                 vertical-align: top;
+                margin-top: 10px;
             }
             .home p{
                 width: 100px;
                 display: inline-block;
-                margin-top: 2px;
+                margin-top: 12px;
                 vertical-align: top;
                 color: #477dac;
             }
             /* .phone img{
-                width: 50px;
-                height: 50px;
+                width: 100px;
                 vertical-align: top;
                 display: inline-block;
             } */
@@ -138,8 +139,9 @@
                 }
                 .contact_info h3{
                     color:#02c0df;
-                    margin: 2px 10px 2px 0px;
-                    font-size: 26px
+                    margin: 0px 10px 0px 0px;
+                    font-size: 26px;
+                    vertical-align: top;
                 }
         .main-content{
             width: 655px;
@@ -154,7 +156,7 @@
 
             }
             .main-content ul{
-                margin-top: 2px;
+                margin: 2px 0px;
             }
             .main-content li{
                 font-size: 10pt;
@@ -163,4 +165,40 @@
             .main-content a{
                 text-decoration: none;
                 color: #4ab6c6;
+            }
+            .client_server{
+                width: 200px;
+                margin-left: 185px;
+            }
+            .main-content ol{
+                margin: 2px 0px;
+            }
+        .bottom-content{
+            border-top: 3px solid #0085e0;
+            border-left: 3px solid #0085e0;
+            border-right: 3px solid #0085e0;
+            width: 650px;
+        }
+            .bottom-content img{
+                width: 100px;
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+            .big_three{
+                display: inline-block;
+                width: 535px;
+                margin-left: 0px;
+                margin-top: 5px;
+            }
+            .big_three h3{
+                color: #25679f;
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+            .big_three p{
+                font-size: 10pt;
+                margin: 0px 0px 5px 0px;
+                width: 490px;
             }
