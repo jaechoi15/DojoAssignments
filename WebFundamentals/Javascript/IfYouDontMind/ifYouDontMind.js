@@ -1,6 +1,6 @@
 var HOUR = 8;
 var MINUTE = 31;
-var PERIOD = "AM";
+var PERIOD = "PM";
 
 if (MINUTE > 30){
     time = "It's almost " + (HOUR+1);
