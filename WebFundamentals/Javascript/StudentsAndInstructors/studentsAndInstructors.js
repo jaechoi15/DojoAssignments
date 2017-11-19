@@ -67,11 +67,12 @@ var users = {
   ]
  }
 
-
  function studentsAndInstructorsBonus()
  {
-     for (var i = 0; i < students.length; i++)
+     for (var i = 0; i < users['Students'].length; i++)
      {
-         console.log(students[i].first_name + " " + students[i].last_name);
+        var fullName = users['Students'][i].first_name + " " + users['Students'][i].last_name;
+        console.log(i + " - " + fullName + " - " + (users['Students'][i].first_name.length + users['Students'][i].last_name.length));
      }
  }
+ studentsAndInstructorsBonus();
