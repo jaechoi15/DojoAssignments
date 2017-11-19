@@ -4,7 +4,7 @@
 // While the user still has quarters, use Math.random to determine if they won.
 
 
-var win = Math.floor(Math.random()*5);
+var win = Math.floor(Math.random()*100);
 var reward = Math.random()*50 + 50;
 
 function playSlots(numQuarters)
@@ -25,6 +25,29 @@ function playSlots(numQuarters)
     }
 }
 playSlots(5);
+
+
+// var win = Math.floor(Math.random()*5);
+// var reward = Math.random()*50 + 50;
+
+// function playSlots(numQuarters)
+// {
+//     for (var i = numQuarters; i > 0; i--)
+//     {
+//         if (win == 1)
+//         {
+//             numQuarters = numQuarters + reward;
+//             // return reward + numQuarters;
+//             console.log("You won " + Math.floor(reward) + " quarters!");
+//         }
+//         else 
+//         {   
+//             numQuarters = numQuarters - 1;
+//             console.log("BETTER LUCK NEXT TIME!");
+//         }
+//     }
+// }
+// playSlots(5);
 
 
 // Bonus:
