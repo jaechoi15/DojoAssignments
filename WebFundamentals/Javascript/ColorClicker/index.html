@@ -17,8 +17,8 @@
           $(document).ready(function(){
              $('#large_box').click(function(){
                 // alert('you clicked the big box!');
-                $('#large_box').css('background-color', 'green');
-                $('#large_box').children().css('background-color', 'gold');
+                $(this).css('background-color', 'green');
+                $(this).children().css('background-color', 'gold');
          //comment this out when you have figured out what event.stopPropagation is used for
              })
              $('.side_box').click(function(event){
@@ -27,7 +27,7 @@
              })
              $('.middle_box').click(function(event){
                 event.stopPropagation();
-                $('.middle_box').parent().css('background-color', 'purple');
+                $(this).parent().css('background-color', 'purple');
              })
           });
       </script>
