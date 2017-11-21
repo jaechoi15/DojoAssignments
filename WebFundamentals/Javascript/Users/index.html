@@ -10,10 +10,10 @@
     <script>
         $(document).ready(function(){
             $('#button').click(function(){
-                // alert("you clicked me!");
-                $('table').append('<tr><td>test</td></tr>')
+                $('table').append('<tr><td>' + $('input[name="first_name"]').val() + '</td><td>' + $('input[name="last_name"]').val() + '</td><td>' + $('input[name="email_address"]').val() + '</td><td>' + $('input[name="phone"]').val() + '</td>'
+                )
             });
-            
+
             $('#form1').submit(function(){
                 return false;
             });     
@@ -22,40 +22,24 @@
 </head>
 <body>
     <table>
-        <thead>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email Address</th>
-                <th>Contact #</th>
-            </tr>
-        </thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>Contact #</th>
+        </tr>
     </table>
+    <h1>Add User</h1>
     <form id='form1' action="#">
-        <h1>Add User</h1>
-        <div class="firstname">
-            <label>First Name:</label>
-            <input type="text" placeholder="First Name"></li>
-        </div>
-        <div class="last_name">
-            <label>Last Name:</label>
-            <input type="text" placeholder="Last Name"></li>
-        </div>
-        <div class="emailaddress">
-            <label>Email Address:</label>
-            <input type="text" placeholder="Email Address"></li>
-        </div>
-        <div class="contact">
-            <label>Contact No.:</label>
-            <input type="text" placeholder="Phone #"></li>
-        </div>
+        <label>First Name:</label>
+        <input type="text" placeholder="First Name" name="first_name"></li>
+        <label>Last Name:</label>
+        <input type="text" placeholder="Last Name" name="last_name"></li>
+        <label>Email Address:</label>
+        <input type="text" placeholder="Email Address" name="email_address"></li>
+        <label>Contact No.:</label>
+        <input type="text" placeholder="Phone #" name="phone"></li>
         <input id="button" type="submit" value="Add User">
-        <!-- <ul>
-            <li><p>First Name: </p><input type="text" value="First Name"></li>
-            <li><p>Last Name: </p><input type="text" value="Last Name"></li>
-            <li><p>Email Address: </p><input type="text" value="Email Address"></li>
-            <li><p>Contact No.: </p> <input type="text" value="Phone #"></li>
-        </ul> -->
     </form>
     
 </body>
