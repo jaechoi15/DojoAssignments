@@ -1,0 +1,13 @@
+*{
+    outline: 1px red dotted;
+}
+table{
+    border: 1px solid black;
+}
+th{
+    padding-right: 50px;
+}
+label{
+    display: inline-block;
+    text-align: right;
+}
