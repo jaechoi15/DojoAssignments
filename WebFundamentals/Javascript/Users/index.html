@@ -9,14 +9,13 @@
     <script src="jquery-3.2.1.js"></script>
     <script>
         $(document).ready(function(){
-            $('#button').click(function(){
-                $('table').append('<tr><td>' + $('input[name="first_name"]').val() + '</td><td>' + $('input[name="last_name"]').val() + '</td><td>' + $('input[name="email_address"]').val() + '</td><td>' + $('input[name="phone"]').val() + '</td>'
-                )
-            });
 
             $('#form1').submit(function(){
+                $('table').append('<tr><td>' + $('input[name="first_name"]').val() + '</td><td>' + $('input[name="last_name"]').val() + '</td><td>' + $('input[name="email_address"]').val() + '</td><td>' + $('input[name="phone"]').val() + '</td>'
+                )
                 return false;
-            });     
+            });
+                 
         });    
     </script>
 </head>
@@ -39,7 +38,7 @@
         <input type="text" placeholder="Email Address" name="email_address"></li>
         <label>Contact No.:</label>
         <input type="text" placeholder="Phone #" name="phone"></li>
-        <input id="button" type="submit" value="Add User">
+        <input type="submit" value="Add User">
     </form>
     
 </body>
