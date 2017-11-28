@@ -36,7 +36,7 @@ elif selection_type is str:
     else:
         print "Short sentence."
 elif selection_type is list:
-    if len(list) >= 10:
+    if len(selection) >= 10:
         print "Big list!"
     else:
         print "Short list."
