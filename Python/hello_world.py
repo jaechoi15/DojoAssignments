@@ -32,7 +32,15 @@
 #     print 'looping - ', count
 #     count += 1
 
-for val in "string":
-  if val == "n":
-    break
-  print val
+# for val in "string":
+#   if val == "n":
+#     break
+#   print val
+
+
+person = {
+  "name":"Jesus",
+  "position":"student"
+}
+for x in person:
+  print x
