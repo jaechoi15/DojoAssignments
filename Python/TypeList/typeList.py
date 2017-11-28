@@ -7,7 +7,9 @@
 
 # Test Case 1
 #input
-l = ['magical unicorns',19,'hello',98.98,'world']
+mixed_type = ['magical unicorns',19,'hello',98.98,'world']
+integer_type = [2,3,1,7,4,12]
+string_type = ['magical','unicorns']
 
 element_type = type(l)
 
