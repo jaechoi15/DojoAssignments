@@ -11,17 +11,6 @@ mixed_type = ['magical unicorns',19,'hello',98.98,'world']
 integer_type = [2,3,1,7,4,12]
 string_type = ['magical','unicorns']
 
-element_type = type(l)
-
-for i in range (0, len(l)):
-    print type(l[i])
-
-if element_type is str:
-    print "The list you entered is of string type"
-elif element_type is int:
-    print "The list you entered is of integer type"
-else:
-    print "The list you entered is of mixed type"
 
 #output
 # "The list you entered is of mixed type"
