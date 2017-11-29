@@ -6,18 +6,18 @@
 
 from random import randint
 
-def scores_grades():
-    print "Score and Grades"
-    for i in range (0,10):
+def scores_grades(num):
+    print "Scores and Grades"
+    for i in range (0,num):
         score = randint(60,100)
         if score < 70:
-            print "Score:", score, "Your grade is D"
+            print "Score:", score," Your grade is D"
         elif score > 69 and score < 80:
-            print "Score:", score, "Your grade is C"
+            print "Score:", score," Your grade is C"
         elif score > 79 and score < 90:
-            print "Score:", score, "Your grade is B"
+            print "Score:", score," Your grade is B"
         else:
-            print "Score:", score, "Your grade is A"
+            print "Score:", score, " Your grade is A"
     print "End of the program. Bye!"
-    
-scores_grades()
+
+scores_grades(30)
