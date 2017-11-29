@@ -38,9 +38,15 @@
 #   print val
 
 
-person = {
-  "name":"Jesus",
-  "position":"student"
-}
-for x in person:
-  print x
+# person = {
+#   "name":"Jesus",
+#   "position":"student"
+# }
+# for x in person:
+#   print x
+
+# 
+
+weekend = {"Sun": "Sunday", "Sat": "Saturday"}
+
+print weekend.keys()
