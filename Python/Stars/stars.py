@@ -22,7 +22,8 @@ def draw_stars2(arr):
         if selection_type is int:
             print stars * y[i]
         else:
-            lowercase = y[i].lower()
-            print lowercase[:1] * len(y[i])
+            lowercase_name = y[i].lower()
+            name_length = len(y[i])
+            print lowercase_name[:1] * name_length
 
 draw_stars2(y)
