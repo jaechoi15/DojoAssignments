@@ -2,18 +2,18 @@
 
 from random import randint
 
-def coinToss():
+def coinToss(toss):
     print "Starting the program..."
-    for toss in range (0, 51):
+    head_toss = 0
+    tail_toss = 0
+    for i in range (0, toss):
         coin_flip = randint(1,100)
-        head_toss = 0
-        tail_toss = 0
         if coin_flip > 49:
             head_toss += 1
-            print "Attempt #" + str(toss) + ": Throwing a coin..." + "It's heads!" + " ... Got " + str(head_toss) + " head(s) so far and " + str(tail_toss) + " tail(s) so far"
+            print "Attempt #" + str(i) + ": Throwing a coin..." + "It's heads!" + " ... Got " + str(head_toss) + " head(s) so far and " + str(tail_toss) + " tail(s) so far"
         else:
             tail_toss += 1
-            print "Attempt #" + str(toss) + ": Throwing a coin..." + "It's tails!" + " ... Got " + str(head_toss) + " head(s) so far and " + str(tail_toss) + " tail(s) so far"
+            print "Attempt #" + str(i) + ": Throwing a coin..." + "It's tails!" + " ... Got " + str(head_toss) + " head(s) so far and " + str(tail_toss) + " tail(s) so far"
     print "Ending the program, thank you!"
 
-coinToss()
+coinToss(51)
