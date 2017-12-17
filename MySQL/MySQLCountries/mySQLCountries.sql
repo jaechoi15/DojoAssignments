@@ -11,10 +11,12 @@ ORDER BY l.percentage DESC;
 -- #2 What query would you run to display the total number of cities for each country? 
 -- Your query should return the name of the country and the total number of cities.
 -- Your query should arrange the result by the number of cities in descending order.
-SELECT count(ci.name), co.name
+SELECT count(ci.name) as num_cities, co.name
 FROM countries as co
 JOIN cities as ci
-ON co.code = ci.country_code;
+ON co.id = ci.country_id
+GROUP BY co.id
+ORDER BY num_cities DESC;
 
 -- #3 What query would you run to get all the cities in Mexico with a population of greater than 500,000? 
 -- Your query should arrange the result by population in descending order.
@@ -52,7 +54,7 @@ AND life_expectancy > 75;
 SELECT co.name, ci.name, ci.district, ci.population 
 FROM countries as co
 JOIN cities as ci
-ON co.code = ci.country_code
+ON co.id = ci.country_id
 WHERE ci.district = "Buenos Aires"
 AND ci.population > 500000
 ORDER BY ci.population DESC;
@@ -60,5 +62,7 @@ ORDER BY ci.population DESC;
 -- #8 What query would you run to summarize the number of countries in each region? 
 -- The query should display the name of the region and the number of countries. 
 -- Also, the query should arrange the result by the number of countries in descending order.
-SELECT *
+SELECT count(name) as num_countries, region
 FROM countries
+GROUP BY region
+ORDER BY num_countries DESC;
