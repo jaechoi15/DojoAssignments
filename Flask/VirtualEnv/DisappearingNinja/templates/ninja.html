@@ -8,31 +8,6 @@
 </head>
 <body>
     <h1>Teenage Mutant Ninja Turtles</h1>
-    {% if color == "blue" %}
-        <div>
-            <h2>Leonardo!</h2>
-            <img src="{{ url_for('static', filename='img/leonardo.jpg') }}">
-        </div>
-    {% elif color == "orange" %}
-        <div>
-            <h2>Michelangelo!</h2>
-            <img src="{{ url_for('static', filename='img/michelangelo.jpg') }}">
-        </div>
-    {% elif color == "purple" %}
-        <div>
-            <h2>Donatello!</h2>
-            <img src="{{ url_for('static', filename='img/donatello.jpg') }}">
-        </div>
-    {% elif color == "red" %}
-        <div>
-            <h2>Raphael!</h2>
-            <img src="{{ url_for('static', filename='img/raphael.jpg') }}">
-        </div>
-    {% else %}
-        <div>
-            <h2>April O'Neil!</h2>
-            <img src="{{ url_for('static', filename='img/notapril.jpg') }}">
-        </div>
-    {% endif %}
+    <img src="{{ url_for('static', filename='img/'+character+'.jpg') }}" alt="{{character}}">
 </body>
 </html>
