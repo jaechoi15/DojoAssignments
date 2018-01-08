@@ -116,7 +116,7 @@ def login():
             return redirect("/")
     return "hit login route"
 
-# Login Success
+# Display the wall
 @app.route('/thewall')
 def success():
     query = "SELECT username FROM users WHERE id = :username"
@@ -130,6 +130,7 @@ def success():
 
     return render_template('thewall.html', logged_user=logged_user, messages=messages)
 
+# Add message
 @app.route('/post_message', methods=['POST'])
 def post_message():
     message = request.form['message_box']
@@ -141,6 +142,7 @@ def post_message():
     mysql.query_db(query, data)
     return redirect('/thewall')
 
+# Logout User
 @app.route('/logout')
 def logout():
     session.clear()
